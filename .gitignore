@@ -1,0 +1,18 @@
+.DS_Store
+.vscode/
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+env/
+wandb/
+.ipynb_checkpoints/
+
+# Experiment artifacts
+llm-opt-baseline-gpu/cifar10/results/
+llm-opt-baseline-gpu/llm-baselines/exps/
+llm-opt-baseline-gpu/llm-baselines/logs/
+llm-opt-baseline-npu/llama2_pretrain/wsd_checkpoints/
+llm-opt-baseline-npu/llama2_pretrain/experiments/**/logs/

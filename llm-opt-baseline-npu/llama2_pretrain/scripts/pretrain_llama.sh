@@ -1,0 +1,15 @@
+torchrun --standalone --nproc_per_node 1 scripts/pretrain.py \
+         --model_config configs/llama_71m.json \
+         --lr 0.001 \
+         --batch_size 16 \
+         --total_batch_size 512 \
+         --activation_checkpointing \
+         --num_training_steps 10000 \
+         --warmup_steps 1000 \
+         --weight_decay 0 \
+         --grad_clipping 1.0 \
+         --dtype bfloat16 \
+         --eval_every 1000 \
+         --single_gpu \
+         --optimizer adamw \
+         --max_length 1024

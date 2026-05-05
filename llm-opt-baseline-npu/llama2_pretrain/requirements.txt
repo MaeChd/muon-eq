@@ -1,0 +1,14 @@
+torch
+transformers
+tokenizers
+datasets
+peft
+wandb
+loguru
+nvitop
+lion-pytorch
+matplotlib
+bitsandbytes
+scipy
+scikit-learn
+evaluate
